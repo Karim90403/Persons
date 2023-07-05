@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "RF Dewi";
+  src: local("RF Dewi"),
+    url(src/fonts/RFDewi.ttf) format("truetype");
+}
+ 
+@font-face {
+  font-family: "RF Dewi Condensed";
+  src: local("RF Dewi Condensed"),
+    url(src/fonts/RFDewiCondensed.ttf) format("truetype");
+}
+
 body {
   background-color: #ccc;
 }
@@ -6,5 +18,9 @@ img{
   image-rendering: -moz-crisp-edges;
   -ms-interpolation-mode: nearest-neighbor;
   image-rendering: crisp-edges; 
+}
+ 
+.text {
+  font-family: "RF Dewi";
 }
 

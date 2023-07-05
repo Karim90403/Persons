@@ -97,22 +97,6 @@ onMounted(async () => {
 </template>
  
 <style lang="scss" scoped>
-@font-face {
-  font-family: "RF Dewi";
-  src: local("RF Dewi"),
-    url(src/fonts/RFDewi.ttf) format("truetype");
-}
- 
-@font-face {
-  font-family: "RF Dewi Condensed";
-  src: local("RF Dewi Condensed"),
-    url(src/fonts/RFDewiCondensed.ttf) format("truetype");
-}
- 
-.text {
-  font-family: "RF Dewi";
-}
- 
 .slider {
   background-color: #fff;
   height: 256px;
