@@ -2,35 +2,6 @@
 import { ref, onMounted } from 'vue';
 import axios from 'axios';
  
-interface ContetnItem {
-  title: string,
-  id: number,
-  parenid?: number,
-  subtitle?: number,
-  namespace: string,
-  channelId: number,
-  highload: number,
-  typeId: number,
-  priority: number,
-  alias: string,
-  typeName: string,
-  backgroundKey: number,
-  template: string,
-  titleHidden: boolean,
-}
- 
-interface Person {
-  type: string,
-  id: number,
-  name: string,
-  surname: string,
-  title: string,
-  origName?: string,
-  origSurname?: string,
-  picId: number,
-  url: string
-}
- 
 const popupIndex = ref<number>(0);
 const sliderIndex = ref<number>(0);
 const showPopup = ref<boolean>(false);
@@ -56,7 +27,7 @@ onMounted(async () => {
     Persons.value = res.data.data.content.find((item: ContetnItem) => item.title == "Персоны").content;
   }
   catch (err) {
-    console.log(err);
+    alert(err);
   }
 })
 </script>
